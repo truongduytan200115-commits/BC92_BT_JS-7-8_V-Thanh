@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Quản Lý Mảng Số Nguyên</h2>
+
+    <div class="input-group">
+        <input type="number" id="inputValue" placeholder="Nhập số nguyên n">
+        <button onclick="addNumber()">Thêm số</button>
+        <button style="background: #e74c3c;" onclick="resetArray()">Xóa mảng</button>
+    </div>
+
+    <div class="array-display" id="arrayDisplay">Mảng hiện tại: []</div>
+
+    <div class="controls">
+        <div class="control-item">
+            <button onclick="sumPositive()">1. Tổng số dương</button>
+            <button onclick="countPositive()">2. Đếm số dương</button>
+            <div id="res1-2" class="result"></div>
+        </div>
+
+        <div class="control-item">
+            <button onclick="findMin()">3. Số nhỏ nhất</button>
+            <button onclick="findMinPositive()">4. Số dương nhỏ nhất</button>
+            <div id="res3-4" class="result"></div>
+        </div>
+
+        <div class="control-item">
+            <button onclick="findLastEven()">5. Số chẵn cuối cùng</button>
+            <div id="res5" class="result"></div>
+        </div>
+
+        <div class="control-item">
+            <div class="swap-inputs">
+                <input type="number" id="pos1" placeholder="Vị trí 1">
+                <input type="number" id="pos2" placeholder="Vị trí 2">
+                <button onclick="swapElements()">6. Đổi chỗ</button>
+            </div>
+            <div id="res6" class="result"></div>
+        </div>
+
+        <div class="control-item">
+            <button onclick="sortArray()">7. Sắp xếp tăng dần</button>
+            <div id="res7" class="result"></div>
+        </div>
+
+        <div class="control-item">
+            <button onclick="findFirstPrime()">8. Số nguyên tố đầu tiên</button>
+            <div id="res8" class="result"></div>
+        </div>
+
+        <div class="control-item">
+            <input type="text" id="realArrayInput" placeholder="Ví dụ: 1.5, 2, 3.4, 4" style="width: 100%; margin-bottom: 5px;">
+            <button onclick="countIntegersInRealArray()">9. Đếm số nguyên trong mảng mới</button>
+            <div id="res9" class="result"></div>
+        </div>
+
+        <div class="control-item">
+            <button onclick="comparePosNeg()">10. So sánh Dương/Âm</button>
+            <div id="res10" class="result"></div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
